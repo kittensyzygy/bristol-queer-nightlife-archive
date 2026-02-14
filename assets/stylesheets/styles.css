@@ -53,7 +53,9 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
+  height: auto;
   display: block;
+  object-fit: contain;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -134,11 +136,6 @@ p, a {
     justify-items: center;
 }
 
-figcaption {
-    width: fit-content;
-    margin: 0 auto;
-}
-
 .gallery {
     display: flex;
     flex-direction: row;
@@ -150,11 +147,14 @@ figcaption {
 .image-container {
     border: 5px white solid;
     border-radius: 5px;
+    width: 90%;
+    max-width: 400px;
+    min-width: 200px;
 }
 
-img {
-  max-width: 400px;
-  object-fit: contain;
+figcaption {
+    width: fit-content;
+    margin: 0 auto;
 }
 
 footer {
